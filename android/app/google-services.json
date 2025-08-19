@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "39552132564",
+    "firebase_url": "https://cinec-movie-booking-9f73c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cinec-movie-booking-9f73c",
+    "storage_bucket": "cinec-movie-booking-9f73c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39552132564:android:591d6dee4237b5ea412241",
+        "android_client_info": {
+          "package_name": "com.example.cinec_movie_booking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUdpRlurG23oPMRdfwaUoxIRXu15oaMc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

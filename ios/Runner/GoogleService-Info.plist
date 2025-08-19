@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCDiZhl5H4lsZ-UIu3mXCqxP8-PDj3HPis</string>
+	<key>GCM_SENDER_ID</key>
+	<string>39552132564</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.cinecMovieBooking</string>
+	<key>PROJECT_ID</key>
+	<string>cinec-movie-booking-9f73c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cinec-movie-booking-9f73c.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:39552132564:ios:ff7f2cb3af6c5893412241</string>
+	<key>DATABASE_URL</key>
+	<string>https://cinec-movie-booking-9f73c-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
