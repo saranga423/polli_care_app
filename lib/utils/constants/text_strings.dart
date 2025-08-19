@@ -2,7 +2,7 @@
 class CTexts {
   static const String tContinue = "Continue";
   static const String onBoardingTitle1 = "Welcome to CINEC Cinema";
-  static const String onBoardingSubTitle1 = "experience of the world";
+  static const String onBoardingSubTitle1 = "";
 
   static const String nameWithInitials = "Name With Initials";
   static const String email = "E-Mail";
@@ -19,9 +19,6 @@ class CTexts {
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
   static const String orIfYouHaveAnAccount = "Or If You Have An Account";
-  static const String iAgreeTo = "I agree to";
-  static const String privacyPolicy = "Privacy Policy";
-  static const String termsOfUse = "Terms of use";
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
@@ -30,7 +27,7 @@ class CTexts {
   // -- Authentication Headings
   static const String loginTitle = "Welcome back,";
   static const String loginSubTitle =
-      "Discover Limitless Choices and Unmatched Convenience.";
+      "Discover, Select, and Book – Movies Made Effortless!.";
   static const String signupTitle = "Let’s create your account";
   static const String forgetPasswordTitle = "Forget password";
   static const String forgetPasswordSubTitle =
@@ -47,8 +44,6 @@ class CTexts {
       "Didn’t get the email? Check your junk/spam or resend it.";
   static const String yourAccountCreatedTitle =
       "Your account successfully created!";
-  static const String yourAccountCreatedSubTitle =
-      "Welcome to Your Ultimate Driving Journey: Your Account is Created!";
 
   // -- Payment
   // -- Home

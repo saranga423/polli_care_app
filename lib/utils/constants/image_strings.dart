@@ -22,7 +22,7 @@ class CImages {
   // -- OnBoarding Texts
   static const String onBoardingImage1 =
       "assets/images/on_boarding_images/onboarding_image_one.png";
-  // -- Payment Methods
+
   // -- Animation
   static const String processingAnimation =
       "assets/images/animations/animation-processing.json";
