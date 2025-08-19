@@ -21,7 +21,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: CAppTheme.lightTheme,
       darkTheme: CAppTheme.darkTheme,
-      initialRoute: '/home',
+      initialRoute: '/onboarding',
       getPages: [
         GetPage(name: '/onboarding', page: () => const OnBoardingScreen()),
         GetPage(name: '/login', page: () => const LoginScreen()),
