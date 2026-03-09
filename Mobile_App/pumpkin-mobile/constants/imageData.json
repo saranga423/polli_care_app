@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://lh3.googleusercontent.com/d/1YrOq-LDLc6sL3I2vkB0RXePlLJvCOb1v",
+    "createdAt": "2025-02-14T03:49:08.380000",
+    "flowerCount": 1
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://lh3.googleusercontent.com/d/12LsxT3vRLfcbp7Yx4oiQ9uwjxJ_qpxaK",
+    "createdAt": "2025-02-14T04:29:12.923000",
+    "flowerCount": 2
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://lh3.googleusercontent.com/d/1CKvppfyx-6Z6_p64ypCojUw8XRYSxm6p",
+    "createdAt": "2025-02-14T05:22:32.940000",
+    "flowerCount": 2
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://lh3.googleusercontent.com/d/1u2pP7oQDFBPKG0g_06rhE3H3DyuJkPnH",
+    "createdAt": "2025-01-14T05:22:35.566000",
+    "flowerCount": 1
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://lh3.googleusercontent.com/d/1ra_sT5Kp-SJSAOItyp-FzjYPhcuu1_eH",
+    "createdAt": "2025-01-14T05:32:38.134000",
+    "flowerCount": 1
+  }
+]
