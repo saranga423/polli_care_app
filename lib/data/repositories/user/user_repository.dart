@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../../../features/authentication/screens/models/user_model.dart';
+import '../../../features/authentication/models/user_model.dart';
 import '../../../utils/constants/text_strings.dart';
 import '../../../utils/exceptions/firebase_exceptions.dart';
 import '../../../utils/exceptions/format_exceptions.dart';

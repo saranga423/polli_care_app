@@ -16,7 +16,7 @@ class OnBoardingController extends GetxController {
     // Wait 3 seconds, then go to LoginScreen
     Future.delayed(const Duration(seconds: 3), () {
       completeOnBoarding();
-      Get.offAllNamed("/login"); // ✅ Navigate to LoginScreen
+      Get.offAllNamed("/login");
     });
   }
 }

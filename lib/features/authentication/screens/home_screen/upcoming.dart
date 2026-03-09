@@ -37,7 +37,7 @@ class UpcomingScreen extends StatelessWidget {
           final now = DateTime.now();
           final today = DateTime(now.year, now.month, now.day);
 
-          // ✅ Only keep user bookings with seats + title
+          // Only keep user bookings with seats + title
           final upcomingMovies = bookedMovies.where((movie) {
             if (movie['title'] == null || movie['seats'] == null) return false;
 
@@ -83,7 +83,7 @@ class UpcomingScreen extends StatelessWidget {
                   date.day == now.day;
 
               return Card(
-                color: isToday ? Colors.red[50] : null,
+                color: isToday ? Colors.blue : null,
                 margin: const EdgeInsets.all(10),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -98,7 +98,7 @@ class UpcomingScreen extends StatelessWidget {
                     "Date: $formattedDate\nShowtime: $showtime\nSeats: $seats",
                   ),
                   trailing: isToday
-                      ? const Icon(Icons.star, color: Colors.redAccent)
+                      ? const Icon(Icons.today, color: Colors.redAccent)
                       : null,
                 ),
               );

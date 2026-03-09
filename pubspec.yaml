@@ -57,4 +57,5 @@ flutter:
   assets:
     - assets/images/on_boarding_images/onboarding_image_one.png
     - assets/logos/light.png
+    - assets/animations/processing.json
 

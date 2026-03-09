@@ -2,7 +2,8 @@
 class CTexts {
   static const String tContinue = "Continue";
   static const String onBoardingTitle1 = "Welcome to CINEC Cinema";
-  static const String onBoardingSubTitle1 = "";
+  static const String onBoardingSubTitle1 =
+      "Book your tickets in just a few taps — fast, simple, secure.";
 
   static const String nameWithInitials = "Name With Initials";
   static const String email = "E-Mail";
@@ -45,7 +46,6 @@ class CTexts {
   static const String yourAccountCreatedTitle =
       "Your account successfully created!";
 
-  // -- Payment
   // -- Home
   static const String homeAppbarTitle = "Welcome Back!";
   static const String verify = "Verify";

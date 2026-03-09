@@ -166,11 +166,6 @@ class AuthenticationRepository extends GetxController {
     }
   }
 
-  /* ------------- Federated identity & social sign-in ------------------ */
-
-  /// [GoogleAuthentication] - GOOGLE
-  /// [FacebookAuthentication] - FACEBOOK
-
   /* ------------- ./end Federated identity & social sign-in ------------------ */
 
   /// [LogoutUser] - valid for any authentication

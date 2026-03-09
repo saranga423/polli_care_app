@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
@@ -5,6 +7,7 @@ import 'package:get/get.dart';
 import '../../../../data/repositories/repositories.authentication/authentication_repository.dart';
 import '../../../../utils/constants/text_strings.dart';
 import '../../../../utils/popups/loaders.dart';
+import '../../screens/login/login.dart';
 
 class VerifyEmailController extends GetxController {
   static VerifyEmailController get instance => Get.find();
@@ -32,27 +35,24 @@ class VerifyEmailController extends GetxController {
   }
 
   /// Timer to automatically redirect on Email Verification
-  // setTimerForAutoRedirect() {
-  //   Timer.periodic(
-  //     const Duration(seconds: 1),
-  //     (timer) async {
-  //       try {
-  //         await FirebaseAuth.instance.currentUser?.reload();
-  //         final user = FirebaseAuth.instance.currentUser;
-  //         if (user != null && user.emailVerified) {
-  //           timer.cancel();
-  //           // Use userId as paymentId
-  //           await _addPaymentToFirestore(user.uid);
-  //           // After payment is updated, navigate to the PaymentPage
-  //           // Get.off(() => rgistrationfee());
-  //         }
-  //       } catch (e) {
-  //         timer.cancel();
-  //         TLoaders.errorSnackBar(title: CTexts.error, message: e.toString());
-  //       }
-  //     },
-  //   );
-  // }
+  setTimerForAutoRedirect() {
+    Timer.periodic(const Duration(seconds: 1), (timer) async {
+      try {
+        await FirebaseAuth.instance.currentUser?.reload();
+        final user = FirebaseAuth.instance.currentUser;
+        if (user != null && user.emailVerified) {
+          timer.cancel();
+          // Use userId as paymentId
+
+          // After payment is updated, navigate to the PaymentPage
+          Get.off(() => LoginScreen());
+        }
+      } catch (e) {
+        timer.cancel();
+        TLoaders.errorSnackBar(title: CTexts.error, message: e.toString());
+      }
+    });
+  }
 
   /// Manually Check if Email Verified
   checkEmailVerificationStatus() async {

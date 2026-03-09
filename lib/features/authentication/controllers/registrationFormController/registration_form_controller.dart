@@ -8,7 +8,7 @@ import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/text_strings.dart';
 import '../../../../utils/helpers/network_manager.dart';
 import '../../../../utils/popups/full_screen_loader.dart';
-import '../../screens/models/user_model.dart';
+import '../../models/user_model.dart';
 import '../../screens/signup/widgets/verify_email.dart';
 
 class RegistrationFormController extends GetxController {

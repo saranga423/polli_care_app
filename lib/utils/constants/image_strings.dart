@@ -24,8 +24,7 @@ class CImages {
       "assets/images/on_boarding_images/onboarding_image_one.png";
 
   // -- Animation
-  static const String processingAnimation =
-      "assets/images/animations/animation-processing.json";
+  static const String processingAnimation = "assets/animations/processing.json";
   static const String emailVerifiedAnimation =
       "assets/images/animations/successfully_created.png";
 }

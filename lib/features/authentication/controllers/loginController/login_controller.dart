@@ -34,7 +34,7 @@ class LoginController extends GetxController {
     if (!loginFormKey.currentState!.validate()) return;
 
     try {
-      // Save email if Remember Me selected
+
       if (rememberMe.value) {
         localStorage.write('REMEMBER_ME_Email', email.text.trim());
       } else {

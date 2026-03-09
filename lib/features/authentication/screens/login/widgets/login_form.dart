@@ -6,6 +6,7 @@ import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 import '../../../../../utils/validators/validation.dart';
 import '../../../controllers/loginController/login_controller.dart';
+import '../../password_configuration/foget_password.dart';
 import '../../signup/signup.dart';
 
 class CLoginForm extends StatelessWidget {
@@ -106,19 +107,6 @@ class CLoginForm extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-/// Dummy Forget Password Screen (Replace with your real implementation)
-class ForgetPasswordScreen extends StatelessWidget {
-  const ForgetPasswordScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Forget Password")),
-      body: const Center(child: Text("Forget Password Screen")),
     );
   }
 }

@@ -139,8 +139,7 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment
-                                  .spaceEvenly, // ✅ prevents overflow
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
                                   [
@@ -162,7 +161,7 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                                 Text(
                                   "${date.day}/${date.month}",
                                   style: TextStyle(
-                                    fontSize: 14, // ✅ slightly smaller
+                                    fontSize: 14, //
                                     fontWeight: FontWeight.bold,
                                     color: isSelected
                                         ? Colors.white
@@ -189,12 +188,16 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                     ),
                     const SizedBox(height: 12),
                     Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
+                      spacing: 12,
+                      runSpacing: 12,
+                      alignment: WrapAlignment.start,
                       children: showtimesList.map((time) {
-                        return ElevatedButton(
-                          onPressed: () => _goToBookingPage(time),
-                          child: Text(time),
+                        return SizedBox(
+                          width: 100,
+                          child: ElevatedButton(
+                            onPressed: () => _goToBookingPage(time),
+                            child: Text(time),
+                          ),
                         );
                       }).toList(),
                     ),

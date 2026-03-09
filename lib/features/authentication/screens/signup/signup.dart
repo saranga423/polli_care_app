@@ -8,8 +8,8 @@ import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
 import '../../../../utils/validators/validation.dart';
 import '../../controllers/registrationFormController/registration_form_controller.dart';
+import '../../models/user_model.dart';
 import '../login/login.dart';
-import '../models/user_model.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
@@ -36,6 +36,7 @@ class SignupScreen extends StatelessWidget {
             key: controller.registrationFormKey,
             child: Column(
               children: [
+                ///name
                 TextFormField(
                   controller: controller.username,
                   validator: (value) => CValidator.validateEmptyText(
@@ -48,6 +49,8 @@ class SignupScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: CSizes.spaceBtwInputFields),
+
+                ///email
                 TextFormField(
                   controller: controller.email,
                   validator: (value) => CValidator.validateEmail(value),
@@ -58,6 +61,7 @@ class SignupScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: CSizes.spaceBtwInputFields),
                 Obx(
+                  ///password
                   () => TextFormField(
                     controller: controller.password,
                     validator: (value) => CValidator.validatePassword(value),
@@ -85,7 +89,7 @@ class SignupScreen extends StatelessWidget {
                       if (controller.registrationFormKey.currentState!
                           .validate()) {
                         try {
-                          // ✅ Register with Firebase Auth
+                          // Register with Firebase Auth
                           final auth = FirebaseAuth.instance;
                           final userCredential = await auth
                               .createUserWithEmailAndPassword(
@@ -95,7 +99,7 @@ class SignupScreen extends StatelessWidget {
 
                           final userId = userCredential.user!.uid;
 
-                          // ✅ Save UserModel to Firestore
+                          // Save UserModel to Firestore
                           final newUser = UserModel(
                             id: userId,
                             username: controller.username.text.trim(),
